@@ -1,0 +1,10 @@
+{%- assign _u = include.url | strip -%}
+{%- if _u contains "://" -%}
+{{- _u -}}
+{%- else -%}
+{%- assign _c0 = _u | slice: 0, 1 -%}
+{%- if _c0 != "/" -%}
+{%- assign _u = "/" | append: _u -%}
+{%- endif -%}
+{{- _u | relative_url -}}
+{%- endif -%}

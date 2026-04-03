@@ -6,9 +6,7 @@ permalink: /publication/2025-water-based-proof-jensen
 excerpt: 'This paper provides a physical intuition for Jensen’s inequality using a water-based model.'
 date: 2025-03-18
 venue: 'The American Mathematical Monthly'
-slidesurl: ''
-paperurl: 'https://jaehyeonkim.github.io/files/WaterProofJensen.pdf'
-bibtexurl: ''
+paperurl: '/files/paper1.pdf'
 # citation: 'Jaehyeon Kim. (2025). &quot;Water-Based Proof of Jensen’s inequality.&quot; <i>The American Mathematical Monthly</i>. DOI: 10.1080/00029890.2025.2460413'
 ---
 
