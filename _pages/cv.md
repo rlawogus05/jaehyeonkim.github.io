@@ -18,7 +18,7 @@ Education
 Research Experience
 ======
 * **Mar. 2026 – Present**: Undergraduate Researcher, [AIBL Lab](https://aibl.snu.ac.kr/team), Seoul National University
-  * Advisor: Kyungsu Kim
+  * Advisor: Prof. Kyungsu Kim
 
 <!-- Skills
 ======
