@@ -11,26 +11,14 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Mar. 2021 – present: Seoul National University, Department of Mathematical Sciences
+  * Mathematical Sciences major
+  * Minor in Computer Science and Engineering
+  * Minor in Physics
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Mar. 2026 – present: Core internship researcher, [AIBL Lab / From Core + Theory to Biomedical](https://aibl.snu.ac.kr/team), Seoul National University
   
 Skills
 ======
@@ -41,7 +29,7 @@ Skills
   * Sub-skill 2.3
 * Skill 3
 
-Publications
+Papers
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
