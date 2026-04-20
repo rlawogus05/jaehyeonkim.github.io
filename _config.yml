@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Jaheyeon Kim"
+title                    : "Jaehyeon Kim"
 title_separator          : "-"
-name                     : &name "Jaheyeon Kim"
-description              : &description "Jaheyeon Kim — academic homepage"
+name                     : &name "Jaehyeon Kim"
+description              : &description "Jaehyeon Kim — academic homepage"
 # 프로젝트 Pages: /rlawogus05/jaehyeonkim.github.io → 아래 url·baseurl 유지. 커스텀 도메인이면 url만 바꾸고 baseurl은 "".
 url                      : "https://rlawogus05.github.io"
 baseurl                  : "/jaehyeonkim.github.io"
@@ -24,7 +24,7 @@ repository               : "rlawogus05/jaehyeonkim.github.io"
 author:
   # Biographic information
   avatar           : "me.jpg"
-  name             : "Jaheyeon Kim"
+  name             : "Jaehyeon Kim"
   pronouns         : # example: "she/her"  
   bio              : "Researcher"
   location         : # e.g. "Seoul, Korea"
@@ -155,9 +155,10 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider               :  "google-analytics-4" # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
-    tracking_id          :
+    # GA4 Measurement ID (예: G-XXXXXXXXXX)
+    tracking_id          : "G-XXXXXXXXXX"
 
 
 # Reading Files

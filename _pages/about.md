@@ -9,7 +9,7 @@ redirect_from:
 
 <section class="home-hero">
   <p class="home-hero__eyebrow">Academic profile</p>
-  <h1 class="home-hero__title">Jaheyeon Kim</h1>
+  <h1 class="home-hero__title">Jaehyeon Kim</h1>
   <!-- <p class="home-hero__lead">
     연구와 출판 정보를 한곳에 모아 두었습니다. 아래 버튼이나 왼쪽 사이드바에서
     <a href="https://scholar.google.com/citations?user=M2GHH78AAAAJ&hl=ko">Google Scholar</a>와
