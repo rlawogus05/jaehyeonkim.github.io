@@ -100,9 +100,11 @@
   }
 
   .home-hero__title {
-    background: linear-gradient(120deg, #7dd3c0 0%, #5eead4 50%, #94a3b8 100%);
+    /* Brighter gradient + subtle glow for readability on dark backgrounds. */
+    background: linear-gradient(120deg, #f8fafc 0%, #5eead4 45%, #a7f3d0 75%, #ffffff 100%);
     -webkit-background-clip: text;
     background-clip: text;
+    text-shadow: 0 1px 10px rgba(94, 234, 212, 0.18);
   }
 
   .home-hero__lead {
@@ -127,4 +129,39 @@
   .home-hero__note a {
     color: #5eead4;
   }
+}
+
+/* Support manual theme toggle used by the site (html[data-theme="dark"]). */
+html[data-theme="dark"] .home-hero__eyebrow {
+  color: #94a3b8;
+}
+
+html[data-theme="dark"] .home-hero__title {
+  background: linear-gradient(120deg, #f8fafc 0%, #5eead4 45%, #a7f3d0 75%, #ffffff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0 1px 10px rgba(94, 234, 212, 0.18);
+}
+
+html[data-theme="dark"] .home-hero__lead {
+  color: #cbd5e1;
+}
+
+html[data-theme="dark"] .home-hero__btn--ghost {
+  background: rgba(255, 255, 255, 0.06);
+  color: #e2e8f0 !important;
+  border-color: rgba(148, 163, 184, 0.35);
+}
+
+html[data-theme="dark"] .home-hero__btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+html[data-theme="dark"] .home-hero__note {
+  border-top-color: rgba(148, 163, 184, 0.2);
+  color: #94a3b8;
+}
+
+html[data-theme="dark"] .home-hero__note a {
+  color: #5eead4;
 }
