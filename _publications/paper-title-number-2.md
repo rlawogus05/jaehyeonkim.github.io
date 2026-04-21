@@ -1,5 +1,5 @@
 ---
-title: "Hydrostatic-based proofs in geometry"
+title: "Hydrostatic-Based Proofs in Geometry"
 collection: publications
 category: manuscripts
 # permalink: /publication/2025-hydrostatic-proofs-geometry
