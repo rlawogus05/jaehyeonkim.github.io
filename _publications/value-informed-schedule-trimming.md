@@ -1,7 +1,7 @@
 ---
 title: "Value-Informed Schedule Trimming for Accelerated Sequential Monte Carlo Guidance in Discrete Diffusion"
 collection: publications
-category: manuscripts
+category: diffusion-math-theory
 # permalink: /publication/2027-mechanical-reasoning-in-differential-geometry
 date: 2026-05-07
 venue: 'Under Review in Neurips 2026'
