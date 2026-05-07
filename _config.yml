@@ -84,10 +84,10 @@ author:
 publication_category:
   books:
     title: 'Books'
-  manuscripts:
-    title: 'Proving Mathematical Theorems with Physics'
   diffusion-math-theory:
     title: 'Improvements in Diffusion AI Models Based on Mathematical Theory'
+  manuscripts:
+    title: 'Proving Mathematical Theorems with Physics'
   diffusion-ai:
     title: 'Diffusion AI'
   conferences:
