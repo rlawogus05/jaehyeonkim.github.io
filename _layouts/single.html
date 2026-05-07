@@ -37,7 +37,15 @@ layout: default
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.venue and page.date %}
-          <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+          {% assign venue_downcase = page.venue | downcase %}
+          <p>
+            {% if page.authors %}{{ page.authors }}<br />{% endif %}
+            {% if venue_downcase contains "under review" %}
+              {{ page.venue }}
+            {% else %}
+              Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }}
+            {% endif %}
+          </p>
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}    
@@ -48,7 +56,11 @@ layout: default
         {{ content }}
 
         {% if page.paperurl %}
-          <p style="font-size: smaller">{% if page.citation %}Recommended citation: {{ page.citation }}<br />{% endif %}<a href="{% include paper-url.html url=page.paperurl %}">Download Paper</a></p>
+          <p style="font-size: smaller">
+            {% if page.citation %}Recommended citation: {{ page.citation }}<br />{% endif %}
+            {% if page.paper_site %}<a href="{% include paper-url.html url=page.paper_site %}">Paper page</a><br />{% endif %}
+            <a href="{% include paper-url.html url=page.paperurl %}">Download Paper</a>
+          </p>
         {% elsif page.citation %}
           <p style="font-size: smaller">Recommended citation: {{ page.citation }}</p>
         {% endif %}

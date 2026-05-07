@@ -15,6 +15,7 @@ Education
   * Major in Mathematics
   * Minor in Computer Science and Engineering
   * Minor in Physics
+  * Completed Mandatory Military Service (May. 2024- Feb. 2026)
 
 Research Experience
 ======

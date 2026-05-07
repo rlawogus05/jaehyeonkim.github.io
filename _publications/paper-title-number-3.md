@@ -6,4 +6,6 @@ category: manuscripts
 date: 2026-04-03
 venue: 'Nowhere'
 paperurl: '/files/MechanicDifferentialGeometry.pdf'
+# citation: 'Jaehyeon Kim. (2026). &quot;'
+authors: Jaehyeon Kim
 ---

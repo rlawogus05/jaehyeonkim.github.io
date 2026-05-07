@@ -30,7 +30,7 @@ author:
   location         : # e.g. "Seoul, Korea"
   employer         : # institution
   uri              : # URL
-  email            : "rlawogus0502@snu.ac.kr"
+  email            : "j.jaehyeon.kim@gmail.com"
 
   # Academic websites
   academia         : # URL
@@ -86,6 +86,8 @@ publication_category:
     title: 'Books'
   manuscripts:
     title: 'Proving Mathematical Theorems with Physics'
+  diffusion-math-theory:
+    title: 'Improvements in Diffusion AI Models Based on Mathematical Theory'
   diffusion-ai:
     title: 'Diffusion AI'
   conferences:
