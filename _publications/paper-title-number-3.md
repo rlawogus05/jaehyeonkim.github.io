@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 # permalink: /publication/2027-mechanical-reasoning-in-differential-geometry
 date: 2026-04-03
-venue: 'Nowhere'
+venue: 'Under Review in Mathematical Intelligencer'
 paperurl: '/files/MechanicDifferentialGeometry.pdf'
 # citation: 'Jaehyeon Kim. (2026). &quot;'
 authors: Jaehyeon Kim
