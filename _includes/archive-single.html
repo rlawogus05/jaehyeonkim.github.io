@@ -45,7 +45,7 @@
           <p>
             {% if post.authors %}{{ post.authors }}<br />{% endif %}
             {% if venue_downcase contains "under review" %}
-              {{ post.venue }}
+              Under Review in <i>{{ post.venue | replace: "Under Review in ", "" | replace: "under review in ", "" }}</i>
             {% else %}
               Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}
             {% endif %}

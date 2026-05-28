@@ -41,7 +41,7 @@ layout: default
           <p>
             {% if page.authors %}{{ page.authors }}<br />{% endif %}
             {% if venue_downcase contains "under review" %}
-              {{ page.venue }}
+              Under Review in <i>{{ page.venue | replace: "Under Review in ", "" | replace: "under review in ", "" }}</i>
             {% else %}
               Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }}
             {% endif %}
