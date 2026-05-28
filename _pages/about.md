@@ -11,7 +11,7 @@ redirect_from:
   <p class="home-hero__eyebrow">Academic profile</p>
   <h1 class="home-hero__title">Jaehyeon Kim</h1>
   <p class="home-hero__lead">
-    I am a science enthusiast who values curiosity, creativity, and critical thinking. I started with a deep love for pure math, but the desire for practical impact naturally guided me to AI. Now, I am deeply passionate about developing AI and making the world a better place. Also, I used to enjoy a unique hobby: proving math theorems using physics. Please feel free to contact me; any questions, ideas, or feedback are always welcome.
+    I am a science enthusiast who values curiosity, creativity, and critical thinking. I started with a deep love for pure math, but the desire for practical impact naturally guided me to AI. Now, I am deeply passionate about developing AI and making the world a better place. My research mainly focuses on developing efficient guidance mechanisms and optimization strategies for diffusion models. Also, I used to enjoy a unique hobby: proving math theorems using physics. Please feel free to contact me; any questions, ideas, or feedback are always welcome.
   </p>
   <!-- <p class="home-hero__lead">
     연구와 출판 정보를 한곳에 모아 두었습니다. 아래 버튼이나 왼쪽 사이드바에서
