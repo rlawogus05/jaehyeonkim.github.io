@@ -9,6 +9,10 @@ redirect_from:
 
 {% include base_path %}
 
+<div class="cv-download-links">
+  <a href="{{ base_path }}/files/cv.pdf" class="btn btn--primary">Download CV (PDF)</a>
+</div>
+
 Education
 ======
 * **Mar. 2021 – Present**: B.S. in Mathematical Sciences, Seoul National University
