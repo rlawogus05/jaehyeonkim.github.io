@@ -41,13 +41,16 @@
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
-          {% assign venue_downcase = post.venue | downcase %}
+          {% assign publication_venue = post.venue | default: "" | strip %}
+          {% assign venue_downcase = publication_venue | downcase %}
           <p>
             {% if post.authors %}{{ post.authors }}<br />{% endif %}
-            {% if venue_downcase contains "under review" %}
-              Under Review in <i>{{ post.venue | replace: "Under Review in ", "" | replace: "under review in ", "" }}</i>
+            {% if publication_venue == "" %}
+              <i>Unpublished manuscript</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}
+            {% elsif venue_downcase contains "under review" %}
+              Under Review in <i>{{ publication_venue | replace: "Under Review in ", "" | replace: "under review in ", "" }}</i>
             {% else %}
-              Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}
+              Published in <i>{{ publication_venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}
             {% endif %}
           </p>
         {% elsif post.date %}

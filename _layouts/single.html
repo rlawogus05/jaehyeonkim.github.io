@@ -36,14 +36,17 @@ layout: default
         
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif page.venue and page.date %}
-          {% assign venue_downcase = page.venue | downcase %}
+        {% elsif page.collection == 'publications' %}
+          {% assign publication_venue = page.venue | default: "" | strip %}
+          {% assign venue_downcase = publication_venue | downcase %}
           <p>
             {% if page.authors %}{{ page.authors }}<br />{% endif %}
-            {% if venue_downcase contains "under review" %}
-              Under Review in <i>{{ page.venue | replace: "Under Review in ", "" | replace: "under review in ", "" }}</i>
+            {% if publication_venue == "" %}
+              <i>Unpublished manuscript</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }}
+            {% elsif venue_downcase contains "under review" %}
+              Under Review in <i>{{ publication_venue | replace: "Under Review in ", "" | replace: "under review in ", "" }}</i>
             {% else %}
-              Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }}
+              Published in <i>{{ publication_venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }}
             {% endif %}
           </p>
         {% elsif page.date %}
